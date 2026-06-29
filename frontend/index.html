@@ -524,7 +524,11 @@
 </main>
 
 <script>
-const API_BASE = 'http://localhost:8000/api/v1';
+// When deployed on Cloudflare Workers, point to the tunnel-exposed backend
+// Update TUNNEL_URL each time you restart localtunnel
+const TUNNEL_URL = 'https://nine-crews-tell.loca.lt';
+const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const API_BASE = isLocal ? window.location.origin + '/api/v1' : TUNNEL_URL + '/api/v1';
 let conversationId = null;
 let pendingFiles = [];
 let isLoading = false;
@@ -575,7 +579,7 @@ async function uploadFiles() {
   pendingFiles.forEach(f => formData.append('files', f));
 
   try {
-    const resp = await fetch(`${API_BASE}/ingest`, { method: 'POST', body: formData });
+    const resp = await fetch(`${API_BASE}/ingest`, { method: 'POST', body: formData, headers: { 'bypass-tunnel-reminder': 'true' } });
     const data = await resp.json();
     hideProgress();
 
@@ -599,7 +603,7 @@ async function uploadFiles() {
 // ── Stats & Docs ──────────────────────────────────────────────────────────
 async function loadStats() {
   try {
-    const resp = await fetch(`${API_BASE}/stats`);
+    const resp = await fetch(`${API_BASE}/stats`, { headers: { 'bypass-tunnel-reminder': 'true' } });
     const data = await resp.json();
     document.getElementById('stat-docs').textContent = data.total_documents || 0;
     document.getElementById('stat-chunks').textContent = data.total_chunks || 0;
@@ -636,7 +640,7 @@ function getDocIcon(name) {
 async function deleteDoc(name) {
   if (!confirm(`Remove "${name}" from the index?`)) return;
   try {
-    const resp = await fetch(`${API_BASE}/documents/${encodeURIComponent(name)}`, { method: 'DELETE' });
+    const resp = await fetch(`${API_BASE}/documents/${encodeURIComponent(name)}`, { method: 'DELETE', headers: { 'bypass-tunnel-reminder': 'true' } });
     if (resp.ok) {
       showToast(`Removed ${name}`, 'info');
       loadStats();
@@ -710,7 +714,7 @@ async function askQuestion(question) {
   try {
     const resp = await fetch(`${API_BASE}/ask`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'bypass-tunnel-reminder': 'true' },
       body: JSON.stringify({
         question,
         conversation_id: conversationId,
