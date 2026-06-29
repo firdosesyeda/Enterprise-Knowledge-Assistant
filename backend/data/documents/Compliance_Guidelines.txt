@@ -1,0 +1,137 @@
+COMPLIANCE GUIDELINES - TechCorp India
+Data Protection & Security Policy v2.4
+Effective Date: January 2024
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 1: DATA CLASSIFICATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1.1 Classification Levels
+All company data must be classified into one of four levels:
+
+PUBLIC
+- Information approved for external release
+- Examples: marketing materials, public website content, press releases
+- Handling: No restrictions on sharing
+
+INTERNAL
+- Information intended for employees only
+- Examples: internal announcements, process documents, meeting notes
+- Handling: Do not share outside the organization without approval
+
+CONFIDENTIAL
+- Sensitive business information
+- Examples: financial reports, client contracts, product roadmaps, HR records
+- Handling: Share only on need-to-know basis; encryption required in transit
+
+RESTRICTED
+- Highest sensitivity; unauthorized disclosure causes severe damage
+- Examples: source code, encryption keys, PII databases, board discussions
+- Handling: Strict access control, audit logging, encryption at rest and in transit
+
+1.2 Data Handling Rules by Classification
+All employees must follow these rules when handling data:
+- Label documents with their classification level
+- Store confidential/restricted data only in approved systems
+- Never store restricted data on personal devices
+- Report suspected data breaches within 1 hour to security@techcorp.com
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 2: GDPR AND PRIVACY COMPLIANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2.1 Personal Data Definition
+Personal data is any information relating to an identified or identifiable individual.
+This includes: names, email addresses, phone numbers, IP addresses, location data,
+biometric data, and any combination of data that can identify a person.
+
+2.2 Employee Obligations
+All employees who handle personal data must:
+- Process data only for specified, legitimate purposes
+- Obtain valid consent before collecting personal data from customers
+- Respond to data subject access requests within 30 days
+- Never transfer personal data to countries without adequate protection
+- Delete personal data when it is no longer needed
+
+2.3 Data Breach Response
+In the event of a data breach:
+1. Contain the breach immediately (disconnect systems if necessary)
+2. Notify the Information Security team within 1 hour
+3. Do not attempt to independently investigate or remediate
+4. The Data Protection Officer (DPO) will assess and notify regulators within 72 hours if required
+5. Document all actions taken
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 3: ACCEPTABLE USE POLICY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3.1 Company Devices and Systems
+Company-provided devices (laptops, phones, etc.) are for business use.
+Limited personal use is permitted provided it does not:
+- Violate any laws or regulations
+- Consume excessive bandwidth or resources
+- Expose the company to security risks
+
+Prohibited activities on company systems:
+- Installing unauthorized software
+- Accessing illegal or inappropriate content
+- Mining cryptocurrency
+- Sharing login credentials with others
+- Bypassing security controls or VPNs
+
+3.2 Password Policy
+All passwords must:
+- Be at least 12 characters long
+- Include uppercase, lowercase, numbers, and special characters
+- Not be reused for the previous 12 passwords
+- Be changed every 90 days for privileged accounts
+- Never be written down or shared
+
+Multi-factor authentication (MFA) is mandatory for:
+- All email and communication accounts
+- Cloud services (AWS, GCP, Azure)
+- VPN access
+- Admin/privileged accounts
+
+3.3 Third-Party Software and AI Tools
+Use of AI tools (e.g., ChatGPT, GitHub Copilot) is permitted for productivity
+but employees must NOT input:
+- Customer personal data
+- Source code marked Restricted
+- Financial projections or unreleased product information
+- Any Confidential or Restricted company information
+
+Approved AI tools list is maintained at intranet.techcorp.internal/ai-tools.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 4: VENDOR AND THIRD-PARTY MANAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4.1 Vendor Onboarding Requirements
+Before sharing company data with any vendor or third party:
+- Legal must review and sign a Data Processing Agreement (DPA)
+- Security must conduct a vendor risk assessment (questionnaire + review)
+- Approval required from the department head and CTO for Restricted data access
+
+4.2 Vendor Access Termination
+When a vendor contract ends:
+- Revoke all access within 24 hours
+- Request data deletion confirmation within 30 days
+- Archive the vendor's DPA for 7 years
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+SECTION 5: PENALTIES FOR NON-COMPLIANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Violations of this policy may result in:
+- Level 1 (minor unintentional): Training and written warning
+- Level 2 (repeated or negligent): Formal disciplinary action, potential suspension
+- Level 3 (intentional or severe): Immediate termination and potential legal action
+
+Employees are encouraged to report compliance concerns anonymously via
+the Ethics Hotline: 1800-XXX-XXXX or ethics@techcorp.com.

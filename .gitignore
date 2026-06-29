@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment / secrets
+.env
+*.env.local
+
+# Vector store (auto-generated, not committed)
+backend/data/vector_store/
+
+# Feedback log
+backend/data/feedback.jsonl
+
+# Evaluation output
+evaluation_report.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Docker
+*.dockerignore
+
+# Logs
+*.log
+logs/

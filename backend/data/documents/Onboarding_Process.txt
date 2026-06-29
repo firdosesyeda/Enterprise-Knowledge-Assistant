@@ -1,0 +1,129 @@
+EMPLOYEE ONBOARDING PROCESS - TechCorp
+Process Document v1.8 | HR Department
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+OVERVIEW
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The onboarding process ensures new employees are productive, integrated, and
+informed within their first 90 days. The process is divided into three phases:
+Pre-Joining, Week 1, and the 30-60-90 Day Plan.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 1: PRE-JOINING (Before Day 1)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Responsibilities - HR Team:
+□ Send offer letter and collect signed acceptance
+□ Initiate background verification (typically 5-7 business days)
+□ Send joining kit via email:
+  - Welcome letter from CEO
+  - First day logistics (time, location, parking)
+  - List of documents to bring on Day 1
+  - Pre-joining reading materials
+
+Responsibilities - IT Team:
+□ Provision laptop and accessories (standard: ThinkPad T14 or MacBook Pro 14)
+□ Create corporate email account (firstname.lastname@techcorp.com)
+□ Set up access to core tools: Slack, Jira, Confluence, GitHub/GitLab
+□ Configure VPN credentials
+
+Documents Required on Day 1:
+- Aadhaar card (original + photocopy)
+- PAN card (original + photocopy)
+- Last 3 months' salary slips (from previous employer)
+- Relieving letter from previous employer
+- Education certificates (10th, 12th, Graduation, Post-Graduation)
+- 4 passport-size photographs
+- Bank account details for payroll setup
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 2: WEEK 1 SCHEDULE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Day 1 - Orientation:
+09:00 AM - Welcome by HR, office tour
+10:00 AM - IT setup: laptop, email, tools access
+11:00 AM - Meet the team and direct manager
+12:30 PM - Team lunch (company sponsored)
+02:00 PM - HR Policy walkthrough (leave, attendance, benefits)
+04:00 PM - Introduction to company culture and values
+05:30 PM - Q&A session with HR
+
+Day 2-3 - Department Onboarding:
+- Deep-dive into department structure and objectives
+- Meet cross-functional stakeholders
+- Access to department-specific tools and codebases
+- Review current projects and sprint backlog
+
+Day 4-5 - Technical/Role Setup:
+- Development environment setup (for engineers)
+- Access to required systems (CRM, ERP, analytics tools)
+- Review first assignment with manager
+- Buddy assignment: each new hire gets a buddy from the team
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 3: 30-60-90 DAY PLAN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+First 30 Days - LEARN:
+Goals:
+- Understand the product, codebase, and team processes
+- Complete all mandatory compliance training (GDPR, Security, Code of Conduct)
+- Shadow at least 3 team members across different functions
+- Complete first small task or ticket
+
+Mandatory Training Modules (must be completed within 30 days):
+1. Information Security Awareness (online, ~2 hours)
+2. GDPR and Data Privacy (online, ~1.5 hours)
+3. Prevention of Sexual Harassment (POSH) (online + in-person, ~3 hours)
+4. Code of Conduct and Ethics (online, ~1 hour)
+
+Days 31-60 - CONTRIBUTE:
+Goals:
+- Independently complete assigned tasks
+- Participate in sprint planning and retrospectives
+- Provide feedback on onboarding experience to HR
+- 30-day review with manager (informal check-in)
+
+Days 61-90 - OWN:
+Goals:
+- Lead at least one small project or initiative
+- Set 6-month goals with manager
+- Complete 90-day performance review
+- Transition from probation (if on 90-day probation period)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+KEY CONTACTS DURING ONBOARDING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HR Onboarding:       onboarding@techcorp.com
+IT Helpdesk:         helpdesk@techcorp.com | Ext 1001
+Payroll:             payroll@techcorp.com
+Security/Compliance: security@techcorp.com
+
+HRMS Portal:         portal.techcorp.internal
+IT Portal:           it.techcorp.internal
+Knowledge Base:      wiki.techcorp.internal
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PROBATION POLICY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+All new employees serve a 90-day probation period.
+During probation:
+- Notice period is 2 weeks (not 1-2 months as for confirmed employees)
+- Remote work is not permitted
+- Performance is reviewed at 30, 60, and 90 days
+- At day 90, the manager submits a confirmation recommendation to HR
+
+Probation may be extended by up to 30 additional days if performance
+is below expectations. A second extension is not permitted;
+employees who do not meet expectations after the extended probation
+will be separated from the company.

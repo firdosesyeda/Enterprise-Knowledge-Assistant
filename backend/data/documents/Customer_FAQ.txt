@@ -1,0 +1,83 @@
+CUSTOMER FAQ - TechCorp CloudSync Pro
+Support Documentation v2.1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 1: BILLING AND PAYMENTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: What are the available pricing plans?
+A: We offer three plans:
+   - Starter: $10/user/month (up to 100 users, 1TB storage)
+   - Business: $8/user/month (101–1,000 users, 10TB storage)
+   - Enterprise: Custom pricing for 1,000+ users, unlimited storage
+   Annual billing receives a 20% discount on all plans.
+
+Q: What payment methods do you accept?
+A: We accept Visa, MasterCard, American Express, PayPal, and wire transfers for Enterprise accounts.
+   All transactions are processed in USD.
+
+Q: What is the refund policy?
+A: Customers may request a full refund within 30 days of the initial purchase (new accounts only).
+   After 30 days, monthly subscriptions are not refundable for the current billing period.
+   Annual subscriptions are eligible for a prorated refund for unused full months.
+   To request a refund, contact billing@techcorp.com with your account ID and reason.
+
+Q: Can I upgrade or downgrade my plan?
+A: Yes. Upgrades take effect immediately and are prorated. Downgrades take effect at the next billing cycle.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 2: PRODUCT FEATURES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: What file types does CloudSync Pro support?
+A: CloudSync Pro supports all file types up to 5GB per file.
+   Special handling for: Office documents (auto-preview), PDF (OCR search), Images (thumbnail generation).
+
+Q: Is there a storage limit?
+A: Starter: 1TB shared across all users.
+   Business: 10TB shared across all users.
+   Enterprise: Unlimited storage (subject to fair use policy).
+
+Q: What is the maximum file size for upload?
+A: 5GB per individual file. For files larger than 5GB, use the desktop client's chunked upload feature.
+
+Q: Does CloudSync Pro support real-time collaboration?
+A: Yes. Multiple users can edit documents simultaneously. Conflict resolution uses operational transforms.
+   Real-time cursors and presence indicators are shown in the Business and Enterprise plans.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 3: SECURITY AND COMPLIANCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: How is my data protected?
+A: All data is encrypted at rest (AES-256) and in transit (TLS 1.3).
+   We are SOC 2 Type II certified, ISO 27001 compliant, and GDPR ready.
+   Data centers are located in India (Mumbai, Chennai) and Singapore.
+
+Q: Can I control user access?
+A: Yes. Role-based access control (RBAC) is available on all plans:
+   - Viewer: Read-only access
+   - Editor: Can edit and comment
+   - Admin: Full access including user management
+   - Owner: Billing and plan management
+
+Q: Where is my data stored?
+A: By default, data is stored in our Indian data centers. Enterprise customers can choose their region.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+SECTION 4: SUPPORT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: What support options are available?
+A: - Starter: Email support only (48-hour response SLA)
+   - Business: Email + chat support (8-hour response SLA, Mon-Fri 9AM-6PM IST)
+   - Enterprise: 24/7 phone, email, and dedicated account manager (1-hour SLA)
+
+Q: How do I report a bug?
+A: Submit bugs through support.techcorp.com or email bugs@techcorp.com.
+   Include steps to reproduce, screenshots, and your browser/OS version.
+
+Q: Is there a service level agreement (SLA)?
+A: Yes. We guarantee 99.9% uptime for Business and Enterprise plans.
+   Starter plan is best-effort with no formal SLA.
+   Downtime compensation: 10% credit per hour of downtime beyond SLA.
