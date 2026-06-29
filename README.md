@@ -44,7 +44,7 @@ An AI-powered knowledge assistant that answers employee questions from internal 
 │  ┌────▼──────┐        │  └────────────────────────────┘  │  │
 │  │ Embedder  │        │                                   │  │
 │  │MiniLM-L6  │        │  ┌────────────────────────────┐  │  │
-│  └────┬──────┘        │  │     LLM (Claude claude-sonnet-4-6)  │  │
+│  └────┬──────┘        │  │     LLM (Local Llama 3)             │  │
 │       │               │  │  Grounded answer generation │  │  │
 │  ┌────▼──────┐        │  │  Hallucination prevention   │  │  │
 │  │   FAISS   │        │  └────────────────────────────┘  │  │
@@ -64,10 +64,10 @@ Document → Load → Extract Text → Clean → Chunk (512 tokens, 64 overlap)
 
 **Query:**
 ```
-Question → Rewrite (Claude) → Embed → FAISS search (top-15)
+Question → Rewrite (Llama 3) → Embed → FAISS search (top-15)
         → Hybrid re-rank (70% semantic + 30% BM25 keyword)
         → Filter (threshold 0.3) → Top-5 chunks
-        → Claude claude-sonnet-4-6 with grounding prompt → Answer + Sources
+        → Local Llama 3 via Ollama with grounding prompt → Answer + Sources
 ```
 
 ---
@@ -76,7 +76,8 @@ Question → Rewrite (Claude) → Embed → FAISS search (top-15)
 
 ### Prerequisites
 - Python 3.10+
-- An Anthropic API key (get one at console.anthropic.com)
+- Ollama installed locally (get it from [ollama.com](https://ollama.com))
+- Llama 3 model downloaded (run `ollama run llama3`)
 
 ### 1. Clone and Setup
 
@@ -95,9 +96,12 @@ pip install -r requirements.txt
 
 ### 2. Configure
 
+Ensure Ollama is running (`ollama serve` or open the Ollama desktop app). The default configuration in `.env` is already set up to connect to local Ollama on port 11434.
+
 ```bash
-cp .env.example .env
-# Edit .env and set your ANTHROPIC_API_KEY
+# Check backend/.env
+# OLLAMA_BASE_URL should point to http://localhost:11434/v1
+# LLM_MODEL should be llama3
 ```
 
 ### 3. Run the Backend
@@ -111,13 +115,12 @@ Three sample documents are included: HR_Policy.txt, Customer_FAQ.txt, Technical_
 
 ### 4. Open the Frontend
 
-Open `frontend/index.html` in your browser (double-click or use a local server).
+To prevent CORS issues when communicating with the backend, serve the frontend using a local web server:
 
 ```bash
-# Optional: use Python's built-in server from frontend/ folder
 cd ../frontend
 python -m http.server 3000
-# Then open http://localhost:3000
+# Then open http://localhost:3000 in your browser
 ```
 
 ### 5. Add Your Own Documents
@@ -149,7 +152,7 @@ curl -X POST http://localhost:8000/api/v1/ask \
 
 ```bash
 # From project root
-echo "ANTHROPIC_API_KEY=your_key_here" > .env
+# Make sure Ollama is running locally
 docker-compose up --build
 ```
 
@@ -197,8 +200,8 @@ enterprise-knowledge-assistant/
 
 ## Technology Choices & Design Decisions
 
-### LLM: Claude claude-sonnet-4-6 (Anthropic)
-**Why:** Best balance of speed, quality, and cost for enterprise Q&A. Strong instruction following means the grounding prompt ("only answer from context") is respected, minimizing hallucinations. Native support for structured reasoning.
+### LLM: Local Llama 3 (via Ollama)
+**Why:** Fully local, private, secure, and free. Since the model runs entirely on your local machine, enterprise documents are never sent to external servers or APIs. Strong instruction following and compatibility with the OpenAI API format make integration seamless.
 
 ### Embeddings: all-MiniLM-L6-v2 (Sentence Transformers)
 **Why:** 
@@ -359,8 +362,8 @@ python evaluate.py --api http://localhost:8000 --verbose
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `ANTHROPIC_API_KEY` | (required) | Your Anthropic API key |
-| `LLM_MODEL` | `claude-sonnet-4-6` | Claude model to use |
+| `OLLAMA_BASE_URL` | `http://localhost:11434/v1` | URL of your local Ollama instance |
+| `LLM_MODEL` | `llama3` | Ollama model to use |
 | `EMBEDDING_MODEL` | `all-MiniLM-L6-v2` | Sentence transformer model |
 | `CHUNK_SIZE` | `512` | Characters per chunk |
 | `CHUNK_OVERLAP` | `64` | Overlap between chunks |
